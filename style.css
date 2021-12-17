@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: wheat;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  color: rgba(245, 222, 179, 0.7);
+  background: #9b6c50;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.45s ease-in-out;
+  margin-left: auto;
+}
+
+button:hover {
+  color: wheat;
+  background: #4f2626;
+}
+
+.cookie-container {
+  background: linear-gradient(260deg, #9b6c50 0%, #4f2626 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  min-width: 310px;
+  overflow: hidden;
+  /* aspect-ratio: 16 / 9; */
+}
+
+.cookie,
+#crumbs,
+svg,
+path,
+g {
+  overflow: visible;
+}
+
+.cookie-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.cookie-title {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.cookie-subtitle {
+  font-weight: bold;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  max-width: 300px;
+}
