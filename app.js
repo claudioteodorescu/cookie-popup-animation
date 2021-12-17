@@ -34,6 +34,7 @@ btn.addEventListener("click", () => {
     defaults: { duration: 0.75, ease: "power1.out" }
   });
   tl.pause();
+  // Cookie jump
   tlClose.to(btn, {
     y: 200,
     ease: "power1.out"
@@ -44,6 +45,19 @@ btn.addEventListener("click", () => {
     {
       opacity: 0,
       ease: "power1.out"
+    },
+    "<"
+  );
+  tlClose.fromTo(
+    ".cookie",
+    { y: 15, x: 5, rotation: "0deg" },
+    {
+      y: -15,
+      x: -15,
+      rotation: "-20deg",
+      yoyo: true,
+      duration: 0.4,
+      repeat: -1
     },
     "<"
   );
@@ -64,11 +78,11 @@ btn.addEventListener("click", () => {
   );
   tlClose.to(".cookie", {
     rotate: "360deg",
-    x: 400,
+    x: 350,
     scale: 0.6,
     opacity: 0,
     ease: "power4.out",
-    duration: 3
+    duration: 4
   });
   tlClose.to(".cookie-container", { display: "none" });
 });
